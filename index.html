@@ -12,20 +12,18 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <section class="block container">
-        <header class="block--header">
-            <h1 class="block__heading">Headings</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, maxime iusto in veritatis a esse cum molestias magnam ea possimus?</p>
-        </header>
-    </section>
-    <section class="block block--dark block--sckewed--left">
-        <div class="container">
-            <header class="block--header">
-                <h1 class="block__heading">Headings</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, maxime iusto in veritatis a esse cum molestias magnam ea possimus?</p>
-            </section>
-            </header>
-        </div>
+    <nav class="nav collapsible">
+    <a class="nav__brand" href="/"><img src="/images/logo.svg" alt=""></a>
+    <svg class="icon icon--primary nav__toggler">
+        <use xlink:href="images/sprite.svg#menu"></use>
+      </svg>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a href="#">Hosting</a></li>
+        <li class="nav__item"><a href="#">VPS</a></li>
+        <li class="nav__item"><a href="#">Domain</a></li>
+        <li class="nav__item"><a href="#">Pricing</a></li>
+      </ul>
+    </nav>
     <script src="/js/main.js"></script>
 </body>
 </html>      
