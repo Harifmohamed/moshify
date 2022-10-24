@@ -218,8 +218,8 @@ a{
     color: #fff;
 }
 
-.btn--accent{
-    background: #e82f00;
+.btn--accent:hover{
+    background: #e22e01;
 }
 
 .btn--block{
