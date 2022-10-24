@@ -27,6 +27,9 @@ h1,
 h2,
 h3{
     color: var(--color-heading);
+    margin-bottom: 1rem;
+    line-height: 1.1;
+
 }
 
 h1{
@@ -250,13 +253,13 @@ a{
 .input{
     padding: 1.5rem 3.5rem;
     border: 1px solid var(--color-border);
+    font-size: 2rem;
     border-radius: var(--border-radius);
     outline: 0;
     color: var(--color-heading);
 }
 
-::placeholder{
-    font-size: 2rem;
+::placeholder{ 
     color: #cdcbd7;
 }
 
@@ -264,7 +267,6 @@ a{
     border: 1px solid var(--color-border);
     border-radius: var(--border-radius);
     display: flex;
-
 }
 
 .input-group .input{
@@ -571,7 +573,7 @@ a{
     margin: 0 auto;
 }
 
-.block--header{
+.block__header{
     text-align: center;
 }
 
@@ -585,7 +587,7 @@ a{
 }
 
 .block--dark .block__heading{
-    color: #7b7b78;
+    color: #fff;
 }
 
 .block--sckewed--right{
@@ -656,4 +658,31 @@ a{
     .nav__item{
         border: 0;
     }
+}
+
+/*-------------------------------------------HERO SECTION---------------------------------------------*/
+.hero{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+.hero__tagline{
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color: #b9c3cf;
+    margin: 2rem 0 5rem;   
+}
+
+.hero__image{
+    width: 100%;
+}
+
+@media screen and (min-width: 768px){
+    .hero{
+        padding-top: 0;
+    }
+
+     .hero__content{
+       text-align: left;
+       align-self: center;
+     } 
 }
