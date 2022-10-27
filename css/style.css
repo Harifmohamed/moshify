@@ -307,11 +307,20 @@ a{
     color: #fff;    
 }
 
+.card--primary .badge--primary{
+    background: #126da4;
+}
+
+
 .card--secondary .badge--secondary{
     background: #02cdf1;
 }
 
 /*---------------------------------- PLANS ----------------------------------------------------------------*/
+.plans{
+    transition: transform .2s ease-out;
+}
+
 .plan__name{
     margin: 0;
     color: #fff;
@@ -342,6 +351,10 @@ a{
     font-weight:600;
 }
 
+.plans--popular{
+    transform: scale(1.1);
+}
+
 .plans--popular .card__header {
     position: relative;
 }
@@ -352,7 +365,15 @@ a{
     display: inline-block;
     position: absolute;
     top: -6px;
-    right: 5%;
+    right: 2%;
+}
+
+.plans:hover {
+    transform: scale(1.05);
+}
+
+.plans--popular:hover {
+    transform: scale(1.15);
 }
 
 @media screen and (min-width: 1024px){
@@ -685,4 +706,14 @@ a{
        text-align: left;
        align-self: center;
      } 
+}
+
+/*-------------------------------------- PLAN BLOCK -----------------------------------------------------*/
+.block-plans .grid{
+    gap: 8rem 4rem;
+}
+
+.block-plans .card{
+    max-width: 500px;
+    margin: 0 auto;
 }
