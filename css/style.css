@@ -122,7 +122,7 @@ a{
 .list {
     list-style: none;
     padding-left: 0;
-    color: var(--color-heading);
+    
 
 }
 
@@ -134,6 +134,7 @@ a{
 .list--tick{
     list-style-image: url(../images/tick.svg);
     padding-left: 3rem;
+    color: var(--color-heading);
 }
 
 .list--tick .list__item{
@@ -398,6 +399,7 @@ a{
 
 .media{
     display: flex;
+    margin-bottom: 4rem;
 }
 
 .media__title{
@@ -607,18 +609,21 @@ a{
     color: #7b7b78;
 }
 
-.block--dark .block__heading{
+.block--dark h1,
+.block--dark h2,
+.block--dark h3{
+
     color: #fff;
 }
 
 .block--sckewed--right{
     padding-bottom: calc(var(--padding-vertical) + 4rem);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 87%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
 }
 
 .block--sckewed--left{
     padding-bottom: calc(var(--padding-vertical) + 4rem);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 }
 
 /*-----------------------------------nav-bar---------------------------------------------------------*/
@@ -682,10 +687,6 @@ a{
 }
 
 /*-------------------------------------------HERO SECTION---------------------------------------------*/
-.hero{
-    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
-}
-
 .hero__tagline{
     font-size: 2rem;
     letter-spacing: 1px;
@@ -743,3 +744,15 @@ a{
     order: 2;
   }
 }
+
+/*---------------------------------------------------------SHOWCASE BLOCK------------------------------*/
+.showcase__heading{
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.showcase__image img{
+    width: 100%;
+}
+
+
